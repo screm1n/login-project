@@ -23,8 +23,9 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
+    
+    transform: translate(-50%, -50%);
 
     background-color: rgb(255, 255, 255);
     width: 250px;
@@ -60,6 +61,30 @@ div#formulario > p {
 
 div.campo > label {
     display: none;
+}
+
+div.campo > i {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #ffb4c6;
+    font-size: 1em;
+    width: calc(100% - 49px);
+    height: 82%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+
+    transform: translateY(-10px);
+}
+
+div.campo > input:focus-within {
+    background-color: azure;
+    border: none;
 }
 
 form > div.campo {
